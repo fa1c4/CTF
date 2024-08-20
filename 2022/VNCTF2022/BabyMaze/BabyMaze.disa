@@ -1,0 +1,1210 @@
+BabyMaze.pyc (Python 3.8)
+[Code]
+    File Name: .\BabyMaze.py
+    Object Name: <module>
+    Arg Count: 0
+    Pos Only Arg Count: 0
+    KW Only Arg Count: 0
+    Locals: 0
+    Stack Size: 61
+    Flags: 0x00000040 (CO_NOFREE)
+    [Names]
+        '_map'
+        'maze'
+        'main'
+        '__name__'
+    [Var Names]
+    [Free Vars]
+    [Cell Vars]
+    [Constants]
+        1
+        5
+        0
+        7
+        [Code]
+            File Name: .\BabyMaze.py
+            Object Name: maze
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Locals: 4
+            Stack Size: 3
+            Flags: 0x00000043 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE)
+            [Names]
+                'input'
+                'range'
+                'len'
+                '_map'
+            [Var Names]
+                'x'
+                'y'
+                'step'
+                'i'
+            [Free Vars]
+            [Cell Vars]
+            [Constants]
+                None
+                1
+                'w'
+                's'
+                'a'
+                'd'
+                False
+                29
+                True
+            [Disassembly]
+                0       LOAD_CONST                      1: 1
+                2       STORE_FAST                      0: x
+                4       LOAD_CONST                      1: 1
+                6       STORE_FAST                      1: y
+                8       LOAD_GLOBAL                     0: input
+                10      CALL_FUNCTION                   0
+                12      STORE_FAST                      2: step
+                14      LOAD_GLOBAL                     1: range
+                16      LOAD_GLOBAL                     2: len
+                18      LOAD_FAST                       2: step
+                20      CALL_FUNCTION                   1
+                22      CALL_FUNCTION                   1
+                24      GET_ITER                        
+                26      FOR_ITER                        142 (to 170)
+                28      STORE_FAST                      3: i
+                30      LOAD_FAST                       2: step
+                32      LOAD_FAST                       3: i
+                34      BINARY_SUBSCR                   
+                36      LOAD_CONST                      2: 'w'
+                38      COMPARE_OP                      2 (==)
+                40      POP_JUMP_IF_FALSE               52
+                42      LOAD_FAST                       0: x
+                44      LOAD_CONST                      1: 1
+                46      INPLACE_SUBTRACT                
+                48      STORE_FAST                      0: x
+                50      JUMP_FORWARD                    72 (to 124)
+                52      LOAD_FAST                       2: step
+                54      LOAD_FAST                       3: i
+                56      BINARY_SUBSCR                   
+                58      LOAD_CONST                      3: 's'
+                60      COMPARE_OP                      2 (==)
+                62      POP_JUMP_IF_FALSE               74
+                64      LOAD_FAST                       0: x
+                66      LOAD_CONST                      1: 1
+                68      INPLACE_ADD                     
+                70      STORE_FAST                      0: x
+                72      JUMP_FORWARD                    50 (to 124)
+                74      LOAD_FAST                       2: step
+                76      LOAD_FAST                       3: i
+                78      BINARY_SUBSCR                   
+                80      LOAD_CONST                      4: 'a'
+                82      COMPARE_OP                      2 (==)
+                84      POP_JUMP_IF_FALSE               96
+                86      LOAD_FAST                       1: y
+                88      LOAD_CONST                      1: 1
+                90      INPLACE_SUBTRACT                
+                92      STORE_FAST                      1: y
+                94      JUMP_FORWARD                    28 (to 124)
+                96      LOAD_FAST                       2: step
+                98      LOAD_FAST                       3: i
+                100     BINARY_SUBSCR                   
+                102     LOAD_CONST                      5: 'd'
+                104     COMPARE_OP                      2 (==)
+                106     POP_JUMP_IF_FALSE               118
+                108     LOAD_FAST                       1: y
+                110     LOAD_CONST                      1: 1
+                112     INPLACE_ADD                     
+                114     STORE_FAST                      1: y
+                116     JUMP_FORWARD                    6 (to 124)
+                118     POP_TOP                         
+                120     LOAD_CONST                      6: False
+                122     RETURN_VALUE                    
+                124     LOAD_GLOBAL                     3: _map
+                126     LOAD_FAST                       0: x
+                128     BINARY_SUBSCR                   
+                130     LOAD_FAST                       1: y
+                132     BINARY_SUBSCR                   
+                134     LOAD_CONST                      1: 1
+                136     COMPARE_OP                      2 (==)
+                138     POP_JUMP_IF_FALSE               146
+                140     POP_TOP                         
+                142     LOAD_CONST                      6: False
+                144     RETURN_VALUE                    
+                146     LOAD_FAST                       0: x
+                148     LOAD_CONST                      7: 29
+                150     COMPARE_OP                      2 (==)
+                152     POP_JUMP_IF_FALSE               26
+                154     LOAD_FAST                       1: y
+                156     LOAD_CONST                      7: 29
+                158     COMPARE_OP                      2 (==)
+                160     POP_JUMP_IF_FALSE               26
+                162     POP_TOP                         
+                164     LOAD_CONST                      8: True
+                166     RETURN_VALUE                    
+                168     JUMP_ABSOLUTE                   26
+                170     LOAD_CONST                      0: None
+                172     RETURN_VALUE                    
+        'maze'
+        [Code]
+            File Name: .\BabyMaze.py
+            Object Name: main
+            Arg Count: 0
+            Pos Only Arg Count: 0
+            KW Only Arg Count: 0
+            Locals: 0
+            Stack Size: 2
+            Flags: 0x00000043 (CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE)
+            [Names]
+                'print'
+                'maze'
+            [Var Names]
+            [Free Vars]
+            [Cell Vars]
+            [Constants]
+                None
+                'Welcome To VNCTF2022!!!'
+                'Hello Mr. X, this time your mission is to get out of this maze this time.(FIND THAT 7!)'
+                'you are still doing the mission alone, this tape will self-destruct in five seconds.'
+                'Congratulation! flag: VNCTF{md5(your input)}'
+                "Sorry, we won't acknowledge the existence of your squad."
+            [Disassembly]
+                0       LOAD_GLOBAL                     0: print
+                2       LOAD_CONST                      1: 'Welcome To VNCTF2022!!!'
+                4       CALL_FUNCTION                   1
+                6       POP_TOP                         
+                8       LOAD_GLOBAL                     0: print
+                10      LOAD_CONST                      2: 'Hello Mr. X, this time your mission is to get out of this maze this time.(FIND THAT 7!)'
+                12      CALL_FUNCTION                   1
+                14      POP_TOP                         
+                16      LOAD_GLOBAL                     0: print
+                18      LOAD_CONST                      3: 'you are still doing the mission alone, this tape will self-destruct in five seconds.'
+                20      CALL_FUNCTION                   1
+                22      POP_TOP                         
+                24      LOAD_GLOBAL                     1: maze
+                26      CALL_FUNCTION                   0
+                28      POP_JUMP_IF_FALSE               40
+                30      LOAD_GLOBAL                     0: print
+                32      LOAD_CONST                      4: 'Congratulation! flag: VNCTF{md5(your input)}'
+                34      CALL_FUNCTION                   1
+                36      POP_TOP                         
+                38      JUMP_FORWARD                    8 (to 48)
+                40      LOAD_GLOBAL                     0: print
+                42      LOAD_CONST                      5: "Sorry, we won't acknowledge the existence of your squad."
+                44      CALL_FUNCTION                   1
+                46      POP_TOP                         
+                48      LOAD_CONST                      0: None
+                50      RETURN_VALUE                    
+        'main'
+        '__main__'
+        None
+    [Disassembly]
+        0       JUMP_ABSOLUTE                   4
+        2       JUMP_ABSOLUTE                   6
+        4       JUMP_ABSOLUTE                   2
+        6       LOAD_CONST                      0: 1
+        8       LOAD_CONST                      0: 1
+        10      LOAD_CONST                      0: 1
+        12      LOAD_CONST                      0: 1
+        14      LOAD_CONST                      0: 1
+        16      LOAD_CONST                      0: 1
+        18      LOAD_CONST                      0: 1
+        20      LOAD_CONST                      0: 1
+        22      LOAD_CONST                      0: 1
+        24      LOAD_CONST                      0: 1
+        26      LOAD_CONST                      0: 1
+        28      LOAD_CONST                      0: 1
+        30      LOAD_CONST                      0: 1
+        32      LOAD_CONST                      0: 1
+        34      LOAD_CONST                      0: 1
+        36      LOAD_CONST                      0: 1
+        38      LOAD_CONST                      0: 1
+        40      LOAD_CONST                      0: 1
+        42      LOAD_CONST                      0: 1
+        44      LOAD_CONST                      0: 1
+        46      LOAD_CONST                      0: 1
+        48      LOAD_CONST                      0: 1
+        50      LOAD_CONST                      0: 1
+        52      LOAD_CONST                      0: 1
+        54      LOAD_CONST                      0: 1
+        56      LOAD_CONST                      0: 1
+        58      LOAD_CONST                      0: 1
+        60      LOAD_CONST                      0: 1
+        62      LOAD_CONST                      0: 1
+        64      LOAD_CONST                      0: 1
+        66      LOAD_CONST                      0: 1
+        68      BUILD_LIST                      31
+        70      LOAD_CONST                      0: 1
+        72      LOAD_CONST                      1: 5
+        74      LOAD_CONST                      0: 1
+        76      LOAD_CONST                      2: 0
+        78      LOAD_CONST                      2: 0
+        80      LOAD_CONST                      2: 0
+        82      LOAD_CONST                      2: 0
+        84      LOAD_CONST                      2: 0
+        86      LOAD_CONST                      2: 0
+        88      LOAD_CONST                      2: 0
+        90      LOAD_CONST                      2: 0
+        92      LOAD_CONST                      2: 0
+        94      LOAD_CONST                      2: 0
+        96      LOAD_CONST                      2: 0
+        98      LOAD_CONST                      2: 0
+        100     LOAD_CONST                      2: 0
+        102     LOAD_CONST                      2: 0
+        104     LOAD_CONST                      2: 0
+        106     LOAD_CONST                      2: 0
+        108     LOAD_CONST                      2: 0
+        110     LOAD_CONST                      0: 1
+        112     LOAD_CONST                      2: 0
+        114     LOAD_CONST                      2: 0
+        116     LOAD_CONST                      2: 0
+        118     LOAD_CONST                      2: 0
+        120     LOAD_CONST                      2: 0
+        122     LOAD_CONST                      2: 0
+        124     LOAD_CONST                      2: 0
+        126     LOAD_CONST                      2: 0
+        128     LOAD_CONST                      2: 0
+        130     LOAD_CONST                      0: 1
+        132     BUILD_LIST                      31
+        134     LOAD_CONST                      0: 1
+        136     LOAD_CONST                      2: 0
+        138     LOAD_CONST                      0: 1
+        140     LOAD_CONST                      2: 0
+        142     LOAD_CONST                      0: 1
+        144     LOAD_CONST                      0: 1
+        146     LOAD_CONST                      0: 1
+        148     LOAD_CONST                      0: 1
+        150     LOAD_CONST                      0: 1
+        152     LOAD_CONST                      0: 1
+        154     LOAD_CONST                      0: 1
+        156     LOAD_CONST                      0: 1
+        158     LOAD_CONST                      0: 1
+        160     LOAD_CONST                      2: 0
+        162     LOAD_CONST                      0: 1
+        164     LOAD_CONST                      0: 1
+        166     LOAD_CONST                      0: 1
+        168     LOAD_CONST                      0: 1
+        170     LOAD_CONST                      0: 1
+        172     LOAD_CONST                      2: 0
+        174     LOAD_CONST                      0: 1
+        176     LOAD_CONST                      2: 0
+        178     LOAD_CONST                      0: 1
+        180     LOAD_CONST                      0: 1
+        182     LOAD_CONST                      0: 1
+        184     LOAD_CONST                      0: 1
+        186     LOAD_CONST                      0: 1
+        188     LOAD_CONST                      0: 1
+        190     LOAD_CONST                      0: 1
+        192     LOAD_CONST                      2: 0
+        194     LOAD_CONST                      0: 1
+        196     BUILD_LIST                      31
+        198     LOAD_CONST                      0: 1
+        200     LOAD_CONST                      2: 0
+        202     LOAD_CONST                      0: 1
+        204     LOAD_CONST                      2: 0
+        206     LOAD_CONST                      2: 0
+        208     LOAD_CONST                      2: 0
+        210     LOAD_CONST                      0: 1
+        212     LOAD_CONST                      2: 0
+        214     LOAD_CONST                      2: 0
+        216     LOAD_CONST                      2: 0
+        218     LOAD_CONST                      2: 0
+        220     LOAD_CONST                      2: 0
+        222     LOAD_CONST                      2: 0
+        224     LOAD_CONST                      2: 0
+        226     LOAD_CONST                      0: 1
+        228     LOAD_CONST                      2: 0
+        230     LOAD_CONST                      2: 0
+        232     LOAD_CONST                      2: 0
+        234     LOAD_CONST                      0: 1
+        236     LOAD_CONST                      2: 0
+        238     LOAD_CONST                      2: 0
+        240     LOAD_CONST                      2: 0
+        242     LOAD_CONST                      0: 1
+        244     LOAD_CONST                      2: 0
+        246     LOAD_CONST                      0: 1
+        248     LOAD_CONST                      2: 0
+        250     LOAD_CONST                      2: 0
+        252     LOAD_CONST                      2: 0
+        254     LOAD_CONST                      0: 1
+        256     LOAD_CONST                      2: 0
+        258     LOAD_CONST                      0: 1
+        260     BUILD_LIST                      31
+        262     LOAD_CONST                      0: 1
+        264     LOAD_CONST                      2: 0
+        266     LOAD_CONST                      0: 1
+        268     LOAD_CONST                      0: 1
+        270     LOAD_CONST                      0: 1
+        272     LOAD_CONST                      0: 1
+        274     LOAD_CONST                      0: 1
+        276     LOAD_CONST                      2: 0
+        278     LOAD_CONST                      0: 1
+        280     LOAD_CONST                      0: 1
+        282     LOAD_CONST                      0: 1
+        284     LOAD_CONST                      0: 1
+        286     LOAD_CONST                      0: 1
+        288     LOAD_CONST                      0: 1
+        290     LOAD_CONST                      0: 1
+        292     LOAD_CONST                      0: 1
+        294     LOAD_CONST                      0: 1
+        296     LOAD_CONST                      2: 0
+        298     LOAD_CONST                      0: 1
+        300     LOAD_CONST                      0: 1
+        302     LOAD_CONST                      0: 1
+        304     LOAD_CONST                      0: 1
+        306     LOAD_CONST                      0: 1
+        308     LOAD_CONST                      2: 0
+        310     LOAD_CONST                      0: 1
+        312     LOAD_CONST                      2: 0
+        314     LOAD_CONST                      0: 1
+        316     LOAD_CONST                      2: 0
+        318     LOAD_CONST                      0: 1
+        320     LOAD_CONST                      2: 0
+        322     LOAD_CONST                      0: 1
+        324     BUILD_LIST                      31
+        326     LOAD_CONST                      0: 1
+        328     LOAD_CONST                      2: 0
+        330     LOAD_CONST                      2: 0
+        332     LOAD_CONST                      2: 0
+        334     LOAD_CONST                      0: 1
+        336     LOAD_CONST                      2: 0
+        338     LOAD_CONST                      2: 0
+        340     LOAD_CONST                      2: 0
+        342     LOAD_CONST                      0: 1
+        344     LOAD_CONST                      2: 0
+        346     LOAD_CONST                      2: 0
+        348     LOAD_CONST                      2: 0
+        350     LOAD_CONST                      2: 0
+        352     LOAD_CONST                      2: 0
+        354     LOAD_CONST                      2: 0
+        356     LOAD_CONST                      2: 0
+        358     LOAD_CONST                      2: 0
+        360     LOAD_CONST                      2: 0
+        362     LOAD_CONST                      2: 0
+        364     LOAD_CONST                      2: 0
+        366     LOAD_CONST                      2: 0
+        368     LOAD_CONST                      2: 0
+        370     LOAD_CONST                      0: 1
+        372     LOAD_CONST                      2: 0
+        374     LOAD_CONST                      2: 0
+        376     LOAD_CONST                      2: 0
+        378     LOAD_CONST                      0: 1
+        380     LOAD_CONST                      2: 0
+        382     LOAD_CONST                      2: 0
+        384     LOAD_CONST                      2: 0
+        386     LOAD_CONST                      0: 1
+        388     BUILD_LIST                      31
+        390     LOAD_CONST                      0: 1
+        392     LOAD_CONST                      0: 1
+        394     LOAD_CONST                      0: 1
+        396     LOAD_CONST                      2: 0
+        398     LOAD_CONST                      0: 1
+        400     LOAD_CONST                      2: 0
+        402     LOAD_CONST                      0: 1
+        404     LOAD_CONST                      0: 1
+        406     LOAD_CONST                      0: 1
+        408     LOAD_CONST                      2: 0
+        410     LOAD_CONST                      0: 1
+        412     LOAD_CONST                      0: 1
+        414     LOAD_CONST                      0: 1
+        416     LOAD_CONST                      0: 1
+        418     LOAD_CONST                      0: 1
+        420     LOAD_CONST                      0: 1
+        422     LOAD_CONST                      0: 1
+        424     LOAD_CONST                      0: 1
+        426     LOAD_CONST                      0: 1
+        428     LOAD_CONST                      0: 1
+        430     LOAD_CONST                      0: 1
+        432     LOAD_CONST                      0: 1
+        434     LOAD_CONST                      0: 1
+        436     LOAD_CONST                      2: 0
+        438     LOAD_CONST                      0: 1
+        440     LOAD_CONST                      0: 1
+        442     LOAD_CONST                      0: 1
+        444     LOAD_CONST                      0: 1
+        446     LOAD_CONST                      0: 1
+        448     LOAD_CONST                      0: 1
+        450     LOAD_CONST                      0: 1
+        452     BUILD_LIST                      31
+        454     LOAD_CONST                      0: 1
+        456     LOAD_CONST                      2: 0
+        458     LOAD_CONST                      2: 0
+        460     LOAD_CONST                      2: 0
+        462     LOAD_CONST                      0: 1
+        464     LOAD_CONST                      2: 0
+        466     LOAD_CONST                      0: 1
+        468     LOAD_CONST                      2: 0
+        470     LOAD_CONST                      2: 0
+        472     LOAD_CONST                      2: 0
+        474     LOAD_CONST                      0: 1
+        476     LOAD_CONST                      2: 0
+        478     LOAD_CONST                      2: 0
+        480     LOAD_CONST                      2: 0
+        482     LOAD_CONST                      2: 0
+        484     LOAD_CONST                      2: 0
+        486     LOAD_CONST                      2: 0
+        488     LOAD_CONST                      2: 0
+        490     LOAD_CONST                      2: 0
+        492     LOAD_CONST                      2: 0
+        494     LOAD_CONST                      0: 1
+        496     LOAD_CONST                      2: 0
+        498     LOAD_CONST                      2: 0
+        500     LOAD_CONST                      2: 0
+        502     LOAD_CONST                      0: 1
+        504     LOAD_CONST                      2: 0
+        506     LOAD_CONST                      2: 0
+        508     LOAD_CONST                      2: 0
+        510     LOAD_CONST                      0: 1
+        512     LOAD_CONST                      2: 0
+        514     LOAD_CONST                      0: 1
+        516     BUILD_LIST                      31
+        518     LOAD_CONST                      0: 1
+        520     LOAD_CONST                      2: 0
+        522     LOAD_CONST                      0: 1
+        524     LOAD_CONST                      0: 1
+        526     LOAD_CONST                      0: 1
+        528     LOAD_CONST                      2: 0
+        530     LOAD_CONST                      0: 1
+        532     LOAD_CONST                      2: 0
+        534     LOAD_CONST                      0: 1
+        536     LOAD_CONST                      0: 1
+        538     LOAD_CONST                      0: 1
+        540     LOAD_CONST                      2: 0
+        542     LOAD_CONST                      0: 1
+        544     LOAD_CONST                      0: 1
+        546     LOAD_CONST                      0: 1
+        548     LOAD_CONST                      0: 1
+        550     LOAD_CONST                      0: 1
+        552     LOAD_CONST                      0: 1
+        554     LOAD_CONST                      0: 1
+        556     LOAD_CONST                      2: 0
+        558     LOAD_CONST                      0: 1
+        560     LOAD_CONST                      2: 0
+        562     LOAD_CONST                      0: 1
+        564     LOAD_CONST                      0: 1
+        566     LOAD_CONST                      0: 1
+        568     LOAD_CONST                      2: 0
+        570     LOAD_CONST                      0: 1
+        572     LOAD_CONST                      2: 0
+        574     LOAD_CONST                      0: 1
+        576     LOAD_CONST                      2: 0
+        578     LOAD_CONST                      0: 1
+        580     BUILD_LIST                      31
+        582     LOAD_CONST                      0: 1
+        584     LOAD_CONST                      2: 0
+        586     LOAD_CONST                      2: 0
+        588     LOAD_CONST                      2: 0
+        590     LOAD_CONST                      2: 0
+        592     LOAD_CONST                      2: 0
+        594     LOAD_CONST                      0: 1
+        596     LOAD_CONST                      2: 0
+        598     LOAD_CONST                      0: 1
+        600     LOAD_CONST                      2: 0
+        602     LOAD_CONST                      2: 0
+        604     LOAD_CONST                      2: 0
+        606     LOAD_CONST                      0: 1
+        608     LOAD_CONST                      2: 0
+        610     LOAD_CONST                      2: 0
+        612     LOAD_CONST                      2: 0
+        614     LOAD_CONST                      0: 1
+        616     LOAD_CONST                      2: 0
+        618     LOAD_CONST                      0: 1
+        620     LOAD_CONST                      2: 0
+        622     LOAD_CONST                      0: 1
+        624     LOAD_CONST                      2: 0
+        626     LOAD_CONST                      2: 0
+        628     LOAD_CONST                      2: 0
+        630     LOAD_CONST                      0: 1
+        632     LOAD_CONST                      2: 0
+        634     LOAD_CONST                      0: 1
+        636     LOAD_CONST                      2: 0
+        638     LOAD_CONST                      2: 0
+        640     LOAD_CONST                      2: 0
+        642     LOAD_CONST                      0: 1
+        644     BUILD_LIST                      31
+        646     LOAD_CONST                      0: 1
+        648     LOAD_CONST                      0: 1
+        650     LOAD_CONST                      0: 1
+        652     LOAD_CONST                      0: 1
+        654     LOAD_CONST                      0: 1
+        656     LOAD_CONST                      0: 1
+        658     LOAD_CONST                      0: 1
+        660     LOAD_CONST                      2: 0
+        662     LOAD_CONST                      0: 1
+        664     LOAD_CONST                      2: 0
+        666     LOAD_CONST                      0: 1
+        668     LOAD_CONST                      0: 1
+        670     LOAD_CONST                      0: 1
+        672     LOAD_CONST                      2: 0
+        674     LOAD_CONST                      0: 1
+        676     LOAD_CONST                      2: 0
+        678     LOAD_CONST                      0: 1
+        680     LOAD_CONST                      2: 0
+        682     LOAD_CONST                      0: 1
+        684     LOAD_CONST                      2: 0
+        686     LOAD_CONST                      0: 1
+        688     LOAD_CONST                      0: 1
+        690     LOAD_CONST                      0: 1
+        692     LOAD_CONST                      2: 0
+        694     LOAD_CONST                      0: 1
+        696     LOAD_CONST                      2: 0
+        698     LOAD_CONST                      0: 1
+        700     LOAD_CONST                      0: 1
+        702     LOAD_CONST                      0: 1
+        704     LOAD_CONST                      2: 0
+        706     LOAD_CONST                      0: 1
+        708     BUILD_LIST                      31
+        710     LOAD_CONST                      0: 1
+        712     LOAD_CONST                      2: 0
+        714     LOAD_CONST                      2: 0
+        716     LOAD_CONST                      2: 0
+        718     LOAD_CONST                      2: 0
+        720     LOAD_CONST                      2: 0
+        722     LOAD_CONST                      2: 0
+        724     LOAD_CONST                      2: 0
+        726     LOAD_CONST                      0: 1
+        728     LOAD_CONST                      2: 0
+        730     LOAD_CONST                      2: 0
+        732     LOAD_CONST                      2: 0
+        734     LOAD_CONST                      2: 0
+        736     LOAD_CONST                      2: 0
+        738     LOAD_CONST                      0: 1
+        740     LOAD_CONST                      2: 0
+        742     LOAD_CONST                      2: 0
+        744     LOAD_CONST                      2: 0
+        746     LOAD_CONST                      0: 1
+        748     LOAD_CONST                      2: 0
+        750     LOAD_CONST                      0: 1
+        752     LOAD_CONST                      2: 0
+        754     LOAD_CONST                      2: 0
+        756     LOAD_CONST                      2: 0
+        758     LOAD_CONST                      0: 1
+        760     LOAD_CONST                      2: 0
+        762     LOAD_CONST                      0: 1
+        764     LOAD_CONST                      2: 0
+        766     LOAD_CONST                      2: 0
+        768     LOAD_CONST                      2: 0
+        770     LOAD_CONST                      0: 1
+        772     BUILD_LIST                      31
+        774     LOAD_CONST                      0: 1
+        776     LOAD_CONST                      2: 0
+        778     LOAD_CONST                      0: 1
+        780     LOAD_CONST                      0: 1
+        782     LOAD_CONST                      0: 1
+        784     LOAD_CONST                      0: 1
+        786     LOAD_CONST                      0: 1
+        788     LOAD_CONST                      0: 1
+        790     LOAD_CONST                      0: 1
+        792     LOAD_CONST                      0: 1
+        794     LOAD_CONST                      0: 1
+        796     LOAD_CONST                      0: 1
+        798     LOAD_CONST                      0: 1
+        800     LOAD_CONST                      0: 1
+        802     LOAD_CONST                      0: 1
+        804     LOAD_CONST                      0: 1
+        806     LOAD_CONST                      0: 1
+        808     LOAD_CONST                      2: 0
+        810     LOAD_CONST                      0: 1
+        812     LOAD_CONST                      2: 0
+        814     LOAD_CONST                      0: 1
+        816     LOAD_CONST                      2: 0
+        818     LOAD_CONST                      0: 1
+        820     LOAD_CONST                      0: 1
+        822     LOAD_CONST                      0: 1
+        824     LOAD_CONST                      2: 0
+        826     LOAD_CONST                      0: 1
+        828     LOAD_CONST                      2: 0
+        830     LOAD_CONST                      0: 1
+        832     LOAD_CONST                      0: 1
+        834     LOAD_CONST                      0: 1
+        836     BUILD_LIST                      31
+        838     LOAD_CONST                      0: 1
+        840     LOAD_CONST                      2: 0
+        842     LOAD_CONST                      2: 0
+        844     LOAD_CONST                      2: 0
+        846     LOAD_CONST                      2: 0
+        848     LOAD_CONST                      2: 0
+        850     LOAD_CONST                      2: 0
+        852     LOAD_CONST                      2: 0
+        854     LOAD_CONST                      0: 1
+        856     LOAD_CONST                      2: 0
+        858     LOAD_CONST                      2: 0
+        860     LOAD_CONST                      2: 0
+        862     LOAD_CONST                      2: 0
+        864     LOAD_CONST                      2: 0
+        866     LOAD_CONST                      2: 0
+        868     LOAD_CONST                      2: 0
+        870     LOAD_CONST                      0: 1
+        872     LOAD_CONST                      2: 0
+        874     LOAD_CONST                      0: 1
+        876     LOAD_CONST                      2: 0
+        878     LOAD_CONST                      2: 0
+        880     LOAD_CONST                      2: 0
+        882     LOAD_CONST                      0: 1
+        884     LOAD_CONST                      2: 0
+        886     LOAD_CONST                      2: 0
+        888     LOAD_CONST                      2: 0
+        890     LOAD_CONST                      0: 1
+        892     LOAD_CONST                      2: 0
+        894     LOAD_CONST                      2: 0
+        896     LOAD_CONST                      2: 0
+        898     LOAD_CONST                      0: 1
+        900     BUILD_LIST                      31
+        902     LOAD_CONST                      0: 1
+        904     LOAD_CONST                      2: 0
+        906     LOAD_CONST                      0: 1
+        908     LOAD_CONST                      0: 1
+        910     LOAD_CONST                      0: 1
+        912     LOAD_CONST                      0: 1
+        914     LOAD_CONST                      0: 1
+        916     LOAD_CONST                      2: 0
+        918     LOAD_CONST                      0: 1
+        920     LOAD_CONST                      2: 0
+        922     LOAD_CONST                      0: 1
+        924     LOAD_CONST                      2: 0
+        926     LOAD_CONST                      0: 1
+        928     LOAD_CONST                      2: 0
+        930     LOAD_CONST                      0: 1
+        932     LOAD_CONST                      0: 1
+        934     LOAD_CONST                      0: 1
+        936     LOAD_CONST                      2: 0
+        938     LOAD_CONST                      0: 1
+        940     LOAD_CONST                      0: 1
+        942     LOAD_CONST                      0: 1
+        944     LOAD_CONST                      0: 1
+        946     LOAD_CONST                      0: 1
+        948     LOAD_CONST                      2: 0
+        950     LOAD_CONST                      0: 1
+        952     LOAD_CONST                      0: 1
+        954     LOAD_CONST                      0: 1
+        956     LOAD_CONST                      0: 1
+        958     LOAD_CONST                      0: 1
+        960     LOAD_CONST                      0: 1
+        962     LOAD_CONST                      0: 1
+        964     BUILD_LIST                      31
+        966     LOAD_CONST                      0: 1
+        968     LOAD_CONST                      2: 0
+        970     LOAD_CONST                      0: 1
+        972     LOAD_CONST                      2: 0
+        974     LOAD_CONST                      2: 0
+        976     LOAD_CONST                      2: 0
+        978     LOAD_CONST                      0: 1
+        980     LOAD_CONST                      2: 0
+        982     LOAD_CONST                      0: 1
+        984     LOAD_CONST                      2: 0
+        986     LOAD_CONST                      0: 1
+        988     LOAD_CONST                      2: 0
+        990     LOAD_CONST                      0: 1
+        992     LOAD_CONST                      2: 0
+        994     LOAD_CONST                      0: 1
+        996     LOAD_CONST                      2: 0
+        998     LOAD_CONST                      2: 0
+        1000    LOAD_CONST                      2: 0
+        1002    LOAD_CONST                      0: 1
+        1004    LOAD_CONST                      2: 0
+        1006    LOAD_CONST                      2: 0
+        1008    LOAD_CONST                      2: 0
+        1010    LOAD_CONST                      2: 0
+        1012    LOAD_CONST                      2: 0
+        1014    LOAD_CONST                      2: 0
+        1016    LOAD_CONST                      2: 0
+        1018    LOAD_CONST                      2: 0
+        1020    LOAD_CONST                      2: 0
+        1022    LOAD_CONST                      2: 0
+        1024    LOAD_CONST                      2: 0
+        1026    LOAD_CONST                      0: 1
+        1028    BUILD_LIST                      31
+        1030    LOAD_CONST                      0: 1
+        1032    LOAD_CONST                      2: 0
+        1034    LOAD_CONST                      0: 1
+        1036    LOAD_CONST                      2: 0
+        1038    LOAD_CONST                      0: 1
+        1040    LOAD_CONST                      2: 0
+        1042    LOAD_CONST                      0: 1
+        1044    LOAD_CONST                      2: 0
+        1046    LOAD_CONST                      0: 1
+        1048    LOAD_CONST                      2: 0
+        1050    LOAD_CONST                      0: 1
+        1052    LOAD_CONST                      2: 0
+        1054    LOAD_CONST                      0: 1
+        1056    LOAD_CONST                      0: 1
+        1058    LOAD_CONST                      0: 1
+        1060    LOAD_CONST                      2: 0
+        1062    LOAD_CONST                      0: 1
+        1064    LOAD_CONST                      0: 1
+        1066    LOAD_CONST                      0: 1
+        1068    LOAD_CONST                      2: 0
+        1070    LOAD_CONST                      0: 1
+        1072    LOAD_CONST                      0: 1
+        1074    LOAD_CONST                      0: 1
+        1076    LOAD_CONST                      0: 1
+        1078    LOAD_CONST                      0: 1
+        1080    LOAD_CONST                      2: 0
+        1082    LOAD_CONST                      0: 1
+        1084    LOAD_CONST                      0: 1
+        1086    LOAD_CONST                      0: 1
+        1088    LOAD_CONST                      2: 0
+        1090    LOAD_CONST                      0: 1
+        1092    BUILD_LIST                      31
+        1094    LOAD_CONST                      0: 1
+        1096    LOAD_CONST                      2: 0
+        1098    LOAD_CONST                      0: 1
+        1100    LOAD_CONST                      2: 0
+        1102    LOAD_CONST                      0: 1
+        1104    LOAD_CONST                      2: 0
+        1106    LOAD_CONST                      0: 1
+        1108    LOAD_CONST                      2: 0
+        1110    LOAD_CONST                      0: 1
+        1112    LOAD_CONST                      2: 0
+        1114    LOAD_CONST                      0: 1
+        1116    LOAD_CONST                      2: 0
+        1118    LOAD_CONST                      2: 0
+        1120    LOAD_CONST                      2: 0
+        1122    LOAD_CONST                      0: 1
+        1124    LOAD_CONST                      2: 0
+        1126    LOAD_CONST                      2: 0
+        1128    LOAD_CONST                      2: 0
+        1130    LOAD_CONST                      0: 1
+        1132    LOAD_CONST                      2: 0
+        1134    LOAD_CONST                      0: 1
+        1136    LOAD_CONST                      2: 0
+        1138    LOAD_CONST                      2: 0
+        1140    LOAD_CONST                      2: 0
+        1142    LOAD_CONST                      0: 1
+        1144    LOAD_CONST                      2: 0
+        1146    LOAD_CONST                      0: 1
+        1148    LOAD_CONST                      2: 0
+        1150    LOAD_CONST                      2: 0
+        1152    LOAD_CONST                      2: 0
+        1154    LOAD_CONST                      0: 1
+        1156    BUILD_LIST                      31
+        1158    LOAD_CONST                      0: 1
+        1160    LOAD_CONST                      2: 0
+        1162    LOAD_CONST                      0: 1
+        1164    LOAD_CONST                      2: 0
+        1166    LOAD_CONST                      0: 1
+        1168    LOAD_CONST                      0: 1
+        1170    LOAD_CONST                      0: 1
+        1172    LOAD_CONST                      2: 0
+        1174    LOAD_CONST                      0: 1
+        1176    LOAD_CONST                      2: 0
+        1178    LOAD_CONST                      0: 1
+        1180    LOAD_CONST                      0: 1
+        1182    LOAD_CONST                      0: 1
+        1184    LOAD_CONST                      2: 0
+        1186    LOAD_CONST                      0: 1
+        1188    LOAD_CONST                      0: 1
+        1190    LOAD_CONST                      0: 1
+        1192    LOAD_CONST                      2: 0
+        1194    LOAD_CONST                      0: 1
+        1196    LOAD_CONST                      2: 0
+        1198    LOAD_CONST                      0: 1
+        1200    LOAD_CONST                      2: 0
+        1202    LOAD_CONST                      0: 1
+        1204    LOAD_CONST                      2: 0
+        1206    LOAD_CONST                      0: 1
+        1208    LOAD_CONST                      0: 1
+        1210    LOAD_CONST                      0: 1
+        1212    LOAD_CONST                      2: 0
+        1214    LOAD_CONST                      0: 1
+        1216    LOAD_CONST                      0: 1
+        1218    LOAD_CONST                      0: 1
+        1220    BUILD_LIST                      31
+        1222    LOAD_CONST                      0: 1
+        1224    LOAD_CONST                      2: 0
+        1226    LOAD_CONST                      2: 0
+        1228    LOAD_CONST                      2: 0
+        1230    LOAD_CONST                      0: 1
+        1232    LOAD_CONST                      2: 0
+        1234    LOAD_CONST                      2: 0
+        1236    LOAD_CONST                      2: 0
+        1238    LOAD_CONST                      0: 1
+        1240    LOAD_CONST                      2: 0
+        1242    LOAD_CONST                      0: 1
+        1244    LOAD_CONST                      2: 0
+        1246    LOAD_CONST                      2: 0
+        1248    LOAD_CONST                      2: 0
+        1250    LOAD_CONST                      2: 0
+        1252    LOAD_CONST                      2: 0
+        1254    LOAD_CONST                      0: 1
+        1256    LOAD_CONST                      2: 0
+        1258    LOAD_CONST                      0: 1
+        1260    LOAD_CONST                      2: 0
+        1262    LOAD_CONST                      0: 1
+        1264    LOAD_CONST                      2: 0
+        1266    LOAD_CONST                      0: 1
+        1268    LOAD_CONST                      2: 0
+        1270    LOAD_CONST                      2: 0
+        1272    LOAD_CONST                      2: 0
+        1274    LOAD_CONST                      0: 1
+        1276    LOAD_CONST                      2: 0
+        1278    LOAD_CONST                      2: 0
+        1280    LOAD_CONST                      2: 0
+        1282    LOAD_CONST                      0: 1
+        1284    BUILD_LIST                      31
+        1286    LOAD_CONST                      0: 1
+        1288    LOAD_CONST                      2: 0
+        1290    LOAD_CONST                      0: 1
+        1292    LOAD_CONST                      0: 1
+        1294    LOAD_CONST                      0: 1
+        1296    LOAD_CONST                      2: 0
+        1298    LOAD_CONST                      0: 1
+        1300    LOAD_CONST                      2: 0
+        1302    LOAD_CONST                      0: 1
+        1304    LOAD_CONST                      2: 0
+        1306    LOAD_CONST                      0: 1
+        1308    LOAD_CONST                      2: 0
+        1310    LOAD_CONST                      0: 1
+        1312    LOAD_CONST                      0: 1
+        1314    LOAD_CONST                      0: 1
+        1316    LOAD_CONST                      0: 1
+        1318    LOAD_CONST                      0: 1
+        1320    LOAD_CONST                      2: 0
+        1322    LOAD_CONST                      0: 1
+        1324    LOAD_CONST                      2: 0
+        1326    LOAD_CONST                      0: 1
+        1328    LOAD_CONST                      2: 0
+        1330    LOAD_CONST                      0: 1
+        1332    LOAD_CONST                      0: 1
+        1334    LOAD_CONST                      0: 1
+        1336    LOAD_CONST                      2: 0
+        1338    LOAD_CONST                      0: 1
+        1340    LOAD_CONST                      2: 0
+        1342    LOAD_CONST                      0: 1
+        1344    LOAD_CONST                      2: 0
+        1346    LOAD_CONST                      0: 1
+        1348    BUILD_LIST                      31
+        1350    LOAD_CONST                      0: 1
+        1352    LOAD_CONST                      2: 0
+        1354    LOAD_CONST                      0: 1
+        1356    LOAD_CONST                      2: 0
+        1358    LOAD_CONST                      2: 0
+        1360    LOAD_CONST                      2: 0
+        1362    LOAD_CONST                      0: 1
+        1364    LOAD_CONST                      2: 0
+        1366    LOAD_CONST                      0: 1
+        1368    LOAD_CONST                      2: 0
+        1370    LOAD_CONST                      0: 1
+        1372    LOAD_CONST                      2: 0
+        1374    LOAD_CONST                      2: 0
+        1376    LOAD_CONST                      2: 0
+        1378    LOAD_CONST                      2: 0
+        1380    LOAD_CONST                      2: 0
+        1382    LOAD_CONST                      2: 0
+        1384    LOAD_CONST                      2: 0
+        1386    LOAD_CONST                      0: 1
+        1388    LOAD_CONST                      2: 0
+        1390    LOAD_CONST                      0: 1
+        1392    LOAD_CONST                      2: 0
+        1394    LOAD_CONST                      0: 1
+        1396    LOAD_CONST                      2: 0
+        1398    LOAD_CONST                      0: 1
+        1400    LOAD_CONST                      2: 0
+        1402    LOAD_CONST                      0: 1
+        1404    LOAD_CONST                      2: 0
+        1406    LOAD_CONST                      0: 1
+        1408    LOAD_CONST                      2: 0
+        1410    LOAD_CONST                      0: 1
+        1412    BUILD_LIST                      31
+        1414    LOAD_CONST                      0: 1
+        1416    LOAD_CONST                      2: 0
+        1418    LOAD_CONST                      0: 1
+        1420    LOAD_CONST                      2: 0
+        1422    LOAD_CONST                      0: 1
+        1424    LOAD_CONST                      0: 1
+        1426    LOAD_CONST                      0: 1
+        1428    LOAD_CONST                      2: 0
+        1430    LOAD_CONST                      0: 1
+        1432    LOAD_CONST                      2: 0
+        1434    LOAD_CONST                      0: 1
+        1436    LOAD_CONST                      0: 1
+        1438    LOAD_CONST                      0: 1
+        1440    LOAD_CONST                      0: 1
+        1442    LOAD_CONST                      0: 1
+        1444    LOAD_CONST                      0: 1
+        1446    LOAD_CONST                      0: 1
+        1448    LOAD_CONST                      0: 1
+        1450    LOAD_CONST                      0: 1
+        1452    LOAD_CONST                      0: 1
+        1454    LOAD_CONST                      0: 1
+        1456    LOAD_CONST                      2: 0
+        1458    LOAD_CONST                      0: 1
+        1460    LOAD_CONST                      2: 0
+        1462    LOAD_CONST                      0: 1
+        1464    LOAD_CONST                      2: 0
+        1466    LOAD_CONST                      0: 1
+        1468    LOAD_CONST                      2: 0
+        1470    LOAD_CONST                      0: 1
+        1472    LOAD_CONST                      2: 0
+        1474    LOAD_CONST                      0: 1
+        1476    BUILD_LIST                      31
+        1478    LOAD_CONST                      0: 1
+        1480    LOAD_CONST                      2: 0
+        1482    LOAD_CONST                      0: 1
+        1484    LOAD_CONST                      2: 0
+        1486    LOAD_CONST                      2: 0
+        1488    LOAD_CONST                      2: 0
+        1490    LOAD_CONST                      0: 1
+        1492    LOAD_CONST                      2: 0
+        1494    LOAD_CONST                      0: 1
+        1496    LOAD_CONST                      2: 0
+        1498    LOAD_CONST                      0: 1
+        1500    LOAD_CONST                      2: 0
+        1502    LOAD_CONST                      2: 0
+        1504    LOAD_CONST                      2: 0
+        1506    LOAD_CONST                      2: 0
+        1508    LOAD_CONST                      2: 0
+        1510    LOAD_CONST                      2: 0
+        1512    LOAD_CONST                      2: 0
+        1514    LOAD_CONST                      2: 0
+        1516    LOAD_CONST                      2: 0
+        1518    LOAD_CONST                      0: 1
+        1520    LOAD_CONST                      2: 0
+        1522    LOAD_CONST                      0: 1
+        1524    LOAD_CONST                      2: 0
+        1526    LOAD_CONST                      0: 1
+        1528    LOAD_CONST                      2: 0
+        1530    LOAD_CONST                      0: 1
+        1532    LOAD_CONST                      2: 0
+        1534    LOAD_CONST                      0: 1
+        1536    LOAD_CONST                      2: 0
+        1538    LOAD_CONST                      0: 1
+        1540    BUILD_LIST                      31
+        1542    LOAD_CONST                      0: 1
+        1544    LOAD_CONST                      2: 0
+        1546    LOAD_CONST                      0: 1
+        1548    LOAD_CONST                      0: 1
+        1550    LOAD_CONST                      0: 1
+        1552    LOAD_CONST                      2: 0
+        1554    LOAD_CONST                      0: 1
+        1556    LOAD_CONST                      2: 0
+        1558    LOAD_CONST                      0: 1
+        1560    LOAD_CONST                      2: 0
+        1562    LOAD_CONST                      0: 1
+        1564    LOAD_CONST                      0: 1
+        1566    LOAD_CONST                      0: 1
+        1568    LOAD_CONST                      0: 1
+        1570    LOAD_CONST                      0: 1
+        1572    LOAD_CONST                      2: 0
+        1574    LOAD_CONST                      0: 1
+        1576    LOAD_CONST                      2: 0
+        1578    LOAD_CONST                      0: 1
+        1580    LOAD_CONST                      2: 0
+        1582    LOAD_CONST                      0: 1
+        1584    LOAD_CONST                      2: 0
+        1586    LOAD_CONST                      0: 1
+        1588    LOAD_CONST                      2: 0
+        1590    LOAD_CONST                      0: 1
+        1592    LOAD_CONST                      2: 0
+        1594    LOAD_CONST                      0: 1
+        1596    LOAD_CONST                      2: 0
+        1598    LOAD_CONST                      0: 1
+        1600    LOAD_CONST                      2: 0
+        1602    LOAD_CONST                      0: 1
+        1604    BUILD_LIST                      31
+        1606    LOAD_CONST                      0: 1
+        1608    LOAD_CONST                      2: 0
+        1610    LOAD_CONST                      2: 0
+        1612    LOAD_CONST                      2: 0
+        1614    LOAD_CONST                      0: 1
+        1616    LOAD_CONST                      2: 0
+        1618    LOAD_CONST                      0: 1
+        1620    LOAD_CONST                      2: 0
+        1622    LOAD_CONST                      0: 1
+        1624    LOAD_CONST                      2: 0
+        1626    LOAD_CONST                      2: 0
+        1628    LOAD_CONST                      2: 0
+        1630    LOAD_CONST                      2: 0
+        1632    LOAD_CONST                      2: 0
+        1634    LOAD_CONST                      0: 1
+        1636    LOAD_CONST                      2: 0
+        1638    LOAD_CONST                      0: 1
+        1640    LOAD_CONST                      2: 0
+        1642    LOAD_CONST                      0: 1
+        1644    LOAD_CONST                      2: 0
+        1646    LOAD_CONST                      2: 0
+        1648    LOAD_CONST                      2: 0
+        1650    LOAD_CONST                      0: 1
+        1652    LOAD_CONST                      2: 0
+        1654    LOAD_CONST                      2: 0
+        1656    LOAD_CONST                      2: 0
+        1658    LOAD_CONST                      0: 1
+        1660    LOAD_CONST                      2: 0
+        1662    LOAD_CONST                      0: 1
+        1664    LOAD_CONST                      2: 0
+        1666    LOAD_CONST                      0: 1
+        1668    BUILD_LIST                      31
+        1670    LOAD_CONST                      0: 1
+        1672    LOAD_CONST                      0: 1
+        1674    LOAD_CONST                      0: 1
+        1676    LOAD_CONST                      0: 1
+        1678    LOAD_CONST                      0: 1
+        1680    LOAD_CONST                      2: 0
+        1682    LOAD_CONST                      0: 1
+        1684    LOAD_CONST                      0: 1
+        1686    LOAD_CONST                      0: 1
+        1688    LOAD_CONST                      0: 1
+        1690    LOAD_CONST                      0: 1
+        1692    LOAD_CONST                      0: 1
+        1694    LOAD_CONST                      0: 1
+        1696    LOAD_CONST                      2: 0
+        1698    LOAD_CONST                      0: 1
+        1700    LOAD_CONST                      0: 1
+        1702    LOAD_CONST                      0: 1
+        1704    LOAD_CONST                      2: 0
+        1706    LOAD_CONST                      0: 1
+        1708    LOAD_CONST                      0: 1
+        1710    LOAD_CONST                      0: 1
+        1712    LOAD_CONST                      0: 1
+        1714    LOAD_CONST                      0: 1
+        1716    LOAD_CONST                      0: 1
+        1718    LOAD_CONST                      0: 1
+        1720    LOAD_CONST                      2: 0
+        1722    LOAD_CONST                      0: 1
+        1724    LOAD_CONST                      0: 1
+        1726    LOAD_CONST                      0: 1
+        1728    LOAD_CONST                      2: 0
+        1730    LOAD_CONST                      0: 1
+        1732    BUILD_LIST                      31
+        1734    LOAD_CONST                      0: 1
+        1736    LOAD_CONST                      2: 0
+        1738    LOAD_CONST                      2: 0
+        1740    LOAD_CONST                      2: 0
+        1742    LOAD_CONST                      2: 0
+        1744    LOAD_CONST                      2: 0
+        1746    LOAD_CONST                      0: 1
+        1748    LOAD_CONST                      2: 0
+        1750    LOAD_CONST                      2: 0
+        1752    LOAD_CONST                      2: 0
+        1754    LOAD_CONST                      2: 0
+        1756    LOAD_CONST                      2: 0
+        1758    LOAD_CONST                      0: 1
+        1760    LOAD_CONST                      2: 0
+        1762    LOAD_CONST                      2: 0
+        1764    LOAD_CONST                      2: 0
+        1766    LOAD_CONST                      0: 1
+        1768    LOAD_CONST                      2: 0
+        1770    LOAD_CONST                      2: 0
+        1772    LOAD_CONST                      2: 0
+        1774    LOAD_CONST                      2: 0
+        1776    LOAD_CONST                      2: 0
+        1778    LOAD_CONST                      2: 0
+        1780    LOAD_CONST                      2: 0
+        1782    LOAD_CONST                      0: 1
+        1784    LOAD_CONST                      2: 0
+        1786    LOAD_CONST                      2: 0
+        1788    LOAD_CONST                      2: 0
+        1790    LOAD_CONST                      2: 0
+        1792    LOAD_CONST                      2: 0
+        1794    LOAD_CONST                      0: 1
+        1796    BUILD_LIST                      31
+        1798    LOAD_CONST                      0: 1
+        1800    LOAD_CONST                      2: 0
+        1802    LOAD_CONST                      0: 1
+        1804    LOAD_CONST                      0: 1
+        1806    LOAD_CONST                      0: 1
+        1808    LOAD_CONST                      0: 1
+        1810    LOAD_CONST                      0: 1
+        1812    LOAD_CONST                      2: 0
+        1814    LOAD_CONST                      0: 1
+        1816    LOAD_CONST                      0: 1
+        1818    LOAD_CONST                      0: 1
+        1820    LOAD_CONST                      2: 0
+        1822    LOAD_CONST                      0: 1
+        1824    LOAD_CONST                      0: 1
+        1826    LOAD_CONST                      0: 1
+        1828    LOAD_CONST                      2: 0
+        1830    LOAD_CONST                      0: 1
+        1832    LOAD_CONST                      0: 1
+        1834    LOAD_CONST                      0: 1
+        1836    LOAD_CONST                      0: 1
+        1838    LOAD_CONST                      0: 1
+        1840    LOAD_CONST                      0: 1
+        1842    LOAD_CONST                      0: 1
+        1844    LOAD_CONST                      2: 0
+        1846    LOAD_CONST                      0: 1
+        1848    LOAD_CONST                      0: 1
+        1850    LOAD_CONST                      0: 1
+        1852    LOAD_CONST                      0: 1
+        1854    LOAD_CONST                      0: 1
+        1856    LOAD_CONST                      2: 0
+        1858    LOAD_CONST                      0: 1
+        1860    BUILD_LIST                      31
+        1862    LOAD_CONST                      0: 1
+        1864    LOAD_CONST                      2: 0
+        1866    LOAD_CONST                      2: 0
+        1868    LOAD_CONST                      2: 0
+        1870    LOAD_CONST                      2: 0
+        1872    LOAD_CONST                      2: 0
+        1874    LOAD_CONST                      2: 0
+        1876    LOAD_CONST                      2: 0
+        1878    LOAD_CONST                      2: 0
+        1880    LOAD_CONST                      2: 0
+        1882    LOAD_CONST                      0: 1
+        1884    LOAD_CONST                      2: 0
+        1886    LOAD_CONST                      2: 0
+        1888    LOAD_CONST                      2: 0
+        1890    LOAD_CONST                      2: 0
+        1892    LOAD_CONST                      2: 0
+        1894    LOAD_CONST                      2: 0
+        1896    LOAD_CONST                      2: 0
+        1898    LOAD_CONST                      2: 0
+        1900    LOAD_CONST                      2: 0
+        1902    LOAD_CONST                      2: 0
+        1904    LOAD_CONST                      2: 0
+        1906    LOAD_CONST                      2: 0
+        1908    LOAD_CONST                      2: 0
+        1910    LOAD_CONST                      0: 1
+        1912    LOAD_CONST                      2: 0
+        1914    LOAD_CONST                      2: 0
+        1916    LOAD_CONST                      2: 0
+        1918    LOAD_CONST                      2: 0
+        1920    LOAD_CONST                      3: 7
+        1922    LOAD_CONST                      0: 1
+        1924    BUILD_LIST                      31
+        1926    LOAD_CONST                      0: 1
+        1928    LOAD_CONST                      0: 1
+        1930    LOAD_CONST                      0: 1
+        1932    LOAD_CONST                      0: 1
+        1934    LOAD_CONST                      0: 1
+        1936    LOAD_CONST                      0: 1
+        1938    LOAD_CONST                      0: 1
+        1940    LOAD_CONST                      0: 1
+        1942    LOAD_CONST                      0: 1
+        1944    LOAD_CONST                      0: 1
+        1946    LOAD_CONST                      0: 1
+        1948    LOAD_CONST                      0: 1
+        1950    LOAD_CONST                      0: 1
+        1952    LOAD_CONST                      0: 1
+        1954    LOAD_CONST                      0: 1
+        1956    LOAD_CONST                      0: 1
+        1958    LOAD_CONST                      0: 1
+        1960    LOAD_CONST                      0: 1
+        1962    LOAD_CONST                      0: 1
+        1964    LOAD_CONST                      0: 1
+        1966    LOAD_CONST                      0: 1
+        1968    LOAD_CONST                      0: 1
+        1970    LOAD_CONST                      0: 1
+        1972    LOAD_CONST                      0: 1
+        1974    LOAD_CONST                      0: 1
+        1976    LOAD_CONST                      0: 1
+        1978    LOAD_CONST                      0: 1
+        1980    LOAD_CONST                      0: 1
+        1982    LOAD_CONST                      0: 1
+        1984    LOAD_CONST                      0: 1
+        1986    LOAD_CONST                      0: 1
+        1988    BUILD_LIST                      31
+        1990    BUILD_LIST                      31
+        1992    STORE_NAME                      0: _map
+        1994    LOAD_CONST                      4: <CODE> maze
+        1996    LOAD_CONST                      5: 'maze'
+        1998    MAKE_FUNCTION                   0
+        2000    STORE_NAME                      1: maze
+        2002    LOAD_CONST                      6: <CODE> main
+        2004    LOAD_CONST                      7: 'main'
+        2006    MAKE_FUNCTION                   0
+        2008    STORE_NAME                      2: main
+        2010    LOAD_NAME                       3: __name__
+        2012    LOAD_CONST                      8: '__main__'
+        2014    COMPARE_OP                      2 (==)
+        2016    POP_JUMP_IF_FALSE               2020
+        2020    LOAD_NAME                       2: main
+        2022    CALL_FUNCTION                   0
+        2024    POP_TOP                         
+        2026    LOAD_CONST                      9: None
+        2028    RETURN_VALUE                    
