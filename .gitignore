@@ -2,3 +2,6 @@
 *.out
 *.pyc
 *.disa
+ot*
+bug*
+BUG*
