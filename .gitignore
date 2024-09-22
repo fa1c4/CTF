@@ -5,6 +5,7 @@
 ot*
 bug*
 BUG*
+.gdb*
 
 # ignore all files without extension #
 # Ignore all
