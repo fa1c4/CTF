@@ -5,3 +5,13 @@
 ot*
 bug*
 BUG*
+
+# ignore all files without extension #
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
