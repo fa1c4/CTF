@@ -35,6 +35,6 @@ int main() {
  
    XXTeaDecrypt(8, (uint32_t*)enc_data, key); 
  
-   printf("GKCTF{%s}", (char*)enc_data); //9b34a61df773acf0e4dec25ea5fb0e29 
+   printf("GKCTF{%s}", (char*)enc_data);
    return 0; 
 }
