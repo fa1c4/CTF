@@ -19,3 +19,6 @@ BUG*
 .gdb*
 bak*
 .vscode\
+*.sh
+*.xineted
+unslv-*\
