@@ -24,3 +24,5 @@ bak*
 unslv-*
 libc*
 *.so
+*.json
+
