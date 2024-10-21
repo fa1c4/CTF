@@ -25,4 +25,5 @@ unslv-*
 libc*
 *.so
 *.json
+*.core
 
