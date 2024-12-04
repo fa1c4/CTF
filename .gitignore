@@ -9,22 +9,41 @@
 !*/
 
 # specific files to ignore
+# ignore executable files
 *.elf
 *.out
 *.pyc
+*.ko
+
+# ignore temp files
 *.disa
 ot*
+.gdb*
+.vscode\
+unslv-*
+
+# ignore bug files and dirs
 bug*
 BUG*
-.gdb*
+
+# ignore back up files and dirs
 bak*
-.vscode\
-*.sh
-*.xineted
-unslv-*
+*history
+
+# ignore environment files
 libc*
 *.so
-*.json
+*.sh
+*.xineted
+deploy*
+*.cpio
 *.core
+*.conf
+*.vfat
+
+# ignore data files
+*.json
 *.txt
+*.yml
+*.zip
 
