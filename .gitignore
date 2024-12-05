@@ -19,8 +19,9 @@
 *.disa
 ot*
 .gdb*
-.vscode\
+.vscode/
 unslv-*
+**/rootfs/
 
 # ignore bug files and dirs
 bug*
@@ -46,4 +47,8 @@ deploy*
 *.txt
 *.yml
 *.zip
+*.tar
+
+# unignore source code
+!scripts/*.sh
 
