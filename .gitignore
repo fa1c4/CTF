@@ -33,7 +33,7 @@ bak*
 
 # ignore environment files
 libc*
-*.so
+*.so*
 *.sh
 *.xineted
 deploy*
@@ -48,6 +48,11 @@ deploy*
 *.yml
 *.zip
 *.tar
+
+# RealWorld configure files
+*.conf
+*.htpasswd
+*.user
 
 # unignore source code
 !scripts/*.sh
