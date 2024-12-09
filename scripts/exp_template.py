@@ -8,7 +8,8 @@ from pwn import *
 
 # define the context
 binary_name = './challenge'
-libc_name = './libc.so.6'
+libc_name = './libc.so.6' if args.REMOTE \
+        else ''
 elf = ELF(binary_name, checksec=True) if binary_name else None
 libc = ELF(libc_name, checksec=False) if libc_name else None
 context.binary = elf
