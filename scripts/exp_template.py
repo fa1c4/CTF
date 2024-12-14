@@ -6,6 +6,7 @@ exploitation path ...
 '''
 from pwn import *
 
+
 # define the context
 binary_name = './challenge'
 libc_name = './libc.so.6' if args.REMOTE \
@@ -35,6 +36,7 @@ elif args.GDB:
     """, aslr=False)
 else:
     io = process(binary_name)
+
 
 # exploiting code
 pass
