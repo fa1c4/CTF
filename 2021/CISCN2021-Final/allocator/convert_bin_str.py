@@ -1,0 +1,5 @@
+# binary_str = "0001111010000110001011100111011010011110110011100000010000100110100101100011011010000110011011100111011010010010"
+binary_str = "10100110010111101001011011001110"
+binary_str = binary_str[::-1]
+decoded_str = ''.join(chr(int(binary_str[i: i + 8], 2)) for i in range(0, len(binary_str), 8))
+print(decoded_str)
