@@ -41,6 +41,7 @@ deploy*
 *.core
 *.conf
 *.vfat
+*.iso
 
 # ignore data files
 *.json
@@ -48,6 +49,7 @@ deploy*
 *.yml
 *.zip
 *.tar
+*.xz
 
 # RealWorld configure files
 *.conf
