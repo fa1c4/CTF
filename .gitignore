@@ -42,6 +42,7 @@ deploy*
 *.conf
 *.vfat
 *.iso
+*.igz
 
 # ignore data files
 *.json
