@@ -13,8 +13,9 @@ libc_name = './libc.so.6' if args.REMOTE \
         else ''
 elf = ELF(binary_name, checksec=True) if binary_name else None
 libc = ELF(libc_name, checksec=False) if libc_name else None
-context.binary = elf
-context(arch=elf.arch, os=elf.os)
+if binary_name:
+    context.binary = elf 
+    context(arch=elf.arch, os=elf.os)
 context.terminal = ['tmux', 'splitw', '-h']
 
 # define the io functions
